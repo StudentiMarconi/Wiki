@@ -7,23 +7,23 @@ export default defineConfig({
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
+    nav: [{ text: "Home", link: "/" }],
 
     sidebar: [
+      { text: "Introduzione", link: "/intro" },
       {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
+        text: "Informatica",
+        link: "/INI",
+        collapsed: true,
+        items: [{ text: "Java", link: "/INI/java" }],
       },
     ],
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+  },
+  markdown: {
+    math: true,
   },
 });
